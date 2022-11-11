@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#root {
+  display: flex;
+  justify-content: center;
+}
+.App {
+  max-width: 1000px;
+  width: 90%;
+}
+.total-progress-bar {
+  height: 10px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #443270;
+  border-radius: 3px;
+}
+.completed-progress-bar {
+  height: 8px;
+  background-color: #af95ff;
+  transition: width 1s;
+}
+.image-grid {
+  column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-width: 33%;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  margin-top: 20px;
+}
