@@ -6,8 +6,8 @@ export default function ImageGrid() {
   return (
     <div className="image-grid">
       {docs && docs.map(doc => (
-        <div className="img-wrap" key={doc.id}>
-          <img src={doc.url} alt={doc.imageName} style={{width: "100%"}} />
+        <div className="image-wrap" key={doc.id}>
+          <img className="image" src={doc.url} alt={doc.imageName} style={{width: "100%"}} />
         </div>
       ))}
     </div>

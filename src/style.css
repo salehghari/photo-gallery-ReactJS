@@ -14,16 +14,42 @@
   max-width: 1000px;
   width: 90%;
 }
+.file-input {
+  margin-top: 10px;
+}
+.file-input::-webkit-file-upload-button {
+  display: none;
+}
+.file-input::before {
+  content: '+ Add image';
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  padding: 8px 14px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.file-input:active::before {
+  background-color: rgb(36, 36, 36);
+}
+.output {
+  margin-top: 6px;
+}
 .total-progress-bar {
   height: 10px;
   width: 100%;
-  margin-top: 20px;
-  border: 1px solid #443270;
+  margin-top: 14px;
+  border: 1px solid #000;
   border-radius: 3px;
 }
 .completed-progress-bar {
   height: 8px;
-  background-color: #af95ff;
+  background-color: #000;
   transition: width 1s;
 }
 .image-grid {
@@ -34,4 +60,12 @@
   -webkit-column-width: 33%;
   -moz-column-width: 33%;
   margin-top: 20px;
+  column-gap: 0;
+}
+.image-wrap {
+  display: flex;
+  margin: 0 12px 12px 0;
+}
+.image {
+  border-radius: 5px;
 }

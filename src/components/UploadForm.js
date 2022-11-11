@@ -21,7 +21,7 @@ export default function UploadForm() {
   }
   return (
     <form>
-      <input type="file" onChange={changeHandler}/>
+      <input className="file-input" type="file" aria-label="Add image" onChange={changeHandler}/>
       <div className="output">
         { error && <div className="error">{ error }</div> }
         { file && <div>{ file.name }</div> }
