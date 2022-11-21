@@ -8,7 +8,7 @@ export default function ImageGrid() {
   return (
     <div className="image-grid">
       {docs && docs.map(doc => (
-        <div className="image-wrap" key={doc.id}>
+        <div className="image-wrap" data-heroname={doc.heroName} key={doc.id}>
           {isLoaded ? null :
             <div className="image-loader"></div>
           }
